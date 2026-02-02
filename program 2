@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+//Searching
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the element to be searched ");
+         int  n=sc.nextInt();
+         int ar[] =new int[n];
+        int i;
+        int key;
+        System.out.println("Enter the element to be formed");
+        key = sc.nextInt();
+         for(i=0;i<n;i++){
+             System.out.println("Enter the element");
+             ar[i]=sc.nextInt(n);
+         }
+         for(i=0;i<n;i++){
+             if(ar[i]==key)
+             break;
+         }
+         if( i == n)
+             System.out.println("Element not found" + key);
+            else
+         System.out.println("Element found at: " + key + "\t" +i);
+    }
+}
